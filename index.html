@@ -90,7 +90,115 @@
         </figure>
       </section>
     </main>
+    <!-- ========== NEW THIS WEEK ========== -->
+    <section class="week">
+      <div class="section-head">
+        <h2 class="big">New<br>This Week <sup>(50)</sup></h2>
+        <a class="see-all" href="#">See All</a>
+      </div>
 
+      <div class="track" id="weekTrack">
+        <article class="product">
+          <div class="product__img"><img src="assets/Rectangle 18.png" alt="Embroidered Seersucker Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>V-Neck T-Shirt</small>
+          <div class="row"><span>Embroidered Seersucker Shirt</span><b>$99</b></div>
+        </article>
+        <article class="product">
+          <div class="product__img"><img src="assets/Rectangle 17.png" alt="Basic Slim Fit T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Cotton T-Shirt</small>
+          <div class="row"><span>Basic Slim Fit T-Shirt</span><b>$99</b></div>
+        </article>
+        <article class="product">
+          <div class="product__img"><img src="assets/Group 68.png" alt="Blurred Print T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Henley T-Shirt</small>
+          <div class="row"><span>Blurred Print T-Shirt</span><b>$99</b></div>
+        </article>
+        <article class="product">
+          <div class="product__img"><img src="assets/Group 69.png" alt="Full Sleeve Zipper"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Crewneck T-Shirt</small>
+          <div class="row"><span>Full Sleeve Zipper</span><b>$99</b></div>
+        </article>
+        <article class="product">
+          <div class="product__img"><img src="assets/semana-5.png" alt="Relaxed Linen Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Cotton T-Shirt</small>
+          <div class="row"><span>Relaxed Linen Shirt</span><b>$109</b></div>
+        </article>
+        <article class="product">
+          <div class="product__img"><img src="assets/semana-6.png" alt="Textured Knit Polo"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Polo T-Shirt</small>
+          <div class="row"><span>Textured Knit Polo</span><b>$119</b></div>
+        </article>
+      </div>
+
+      <div class="pager">
+        <button id="prev" aria-label="Anterior" disabled>&lsaquo;</button>
+        <button id="next" aria-label="Siguiente">&rsaquo;</button>
+      </div>
+    </section>
+
+    <!-- ========== XIV COLLECTIONS ========== -->
+    <section class="collections">
+      <h2 class="big">XIV<br>Collections<br>23-24</h2>
+
+      <div class="toolbar">
+        <div class="tabs">
+          <button class="tab is-active" data-filter="all">(ALL)</button>
+          <button class="tab" data-filter="men">Men</button>
+          <button class="tab" data-filter="women">Women</button>
+          <button class="tab" data-filter="kid">KID</button>
+        </div>
+        <div class="tools">
+          <span class="filters">Filters(+)</span>
+          <div class="sorts">
+            <button class="sorts__toggle" id="sortsToggle">Sorts(-)</button>
+            <div class="sorts__options" id="sortsOptions">
+              <button data-sort="asc">Less to more</button>
+              <button data-sort="desc">More to Less</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid" id="grid">
+        <article class="product" data-cat="men" data-price="199">
+          <div class="product__img"><img src="assets/coleccion-1.png" alt="Basic Heavy Weight T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Cotton T-Shirt</small>
+          <div class="row"><span>Basic Heavy Weight T-Shirt</span><b>$ 199</b></div>
+        </article>
+        <article class="product" data-cat="men" data-price="199">
+          <div class="product__img"><img src="assets/coleccion-2.png" alt="Soft Wash Straight Fit Jeans"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Cotton Jeans</small>
+          <div class="row"><span>Soft Wash Straight Fit Jeans</span><b>$ 199</b></div>
+        </article>
+        <article class="product" data-cat="men" data-price="199">
+          <div class="product__img"><img src="assets/coleccion-3.png" alt="Basic Heavy Weight T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Cotton T-Shirt</small>
+          <div class="row"><span>Basic Heavy Weight T-Shirt</span><b>$ 199</b></div>
+        </article>
+
+        <!-- Se muestran al pulsar "More" -->
+        <article class="product is-extra" data-cat="women" data-price="149">
+          <div class="product__img"><img src="assets/coleccion-4.png" alt="Relaxed Linen Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Linen Shirt</small>
+          <div class="row"><span>Relaxed Linen Shirt</span><b>$ 149</b></div>
+        </article>
+        <article class="product is-extra" data-cat="kid" data-price="89">
+          <div class="product__img"><img src="assets/coleccion-5.png" alt="Kids Zip Hoodie"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Cotton Hoodie</small>
+          <div class="row"><span>Kids Zip Hoodie</span><b>$ 89</b></div>
+        </article>
+        <article class="product is-extra" data-cat="women" data-price="129">
+          <div class="product__img"><img src="assets/coleccion-6.png" alt="Wide Leg Pants"><button class="plus" aria-label="Agregar">+</button></div>
+          <small>Cotton Pants</small>
+          <div class="row"><span>Wide Leg Pants</span><b>$ 129</b></div>
+        </article>
+      </div>
+
+      <button class="more" id="more">
+        <span id="moreLabel">More</span>
+        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l5 5 5-5"/></svg>
+      </button>
+    </section>
   </div>
 </body>
 </html>
