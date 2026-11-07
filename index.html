@@ -52,7 +52,7 @@
           <li><a href="#">Kids</a></li>
         </ul>
 
-        <form class="search" role="search" onsubmit="return false">
+        <form class="search" role="search" action="#">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
           <input type="search" placeholder="Search" aria-label="Buscar">
         </form>
@@ -75,7 +75,7 @@
 
       <section class="gallery" aria-label="Productos">
         <figure class="card">
-         <img src="assets/pantalon.jpg.png" alt="Pantalón blanco con botas">
+          <img src="assets/pantalon.jpg.png" alt="Pantalón blanco con botas">
           <figcaption>
             <small>Cotton T-Shirt</small>
             <span>Full Sleeve Zipper</span><b>$199</b>
@@ -90,6 +90,7 @@
         </figure>
       </section>
     </main>
+
     <!-- ========== NEW THIS WEEK ========== -->
     <section class="week">
       <div class="section-head">
@@ -97,7 +98,7 @@
         <a class="see-all" href="#">See All</a>
       </div>
 
-      <div class="track" id="weekTrack">
+      <div class="track">
         <article class="product">
           <div class="product__img"><img src="assets/Rectangle 18.png" alt="Embroidered Seersucker Shirt"><button class="plus" aria-label="Agregar">+</button></div>
           <small>V-Neck T-Shirt</small>
@@ -131,8 +132,8 @@
       </div>
 
       <div class="pager">
-        <button id="prev" aria-label="Anterior" disabled>&lsaquo;</button>
-        <button id="next" aria-label="Siguiente">&rsaquo;</button>
+        <button aria-label="Anterior">&lsaquo;</button>
+        <button aria-label="Siguiente">&rsaquo;</button>
       </div>
     </section>
 
@@ -142,63 +143,242 @@
 
       <div class="toolbar">
         <div class="tabs">
-          <button class="tab is-active" data-filter="all">(ALL)</button>
-          <button class="tab" data-filter="men">Men</button>
-          <button class="tab" data-filter="women">Women</button>
-          <button class="tab" data-filter="kid">KID</button>
+          <a class="tab is-active" href="#">(ALL)</a>
+          <a class="tab" href="#">Men</a>
+          <a class="tab" href="#">Women</a>
+          <a class="tab" href="#">KID</a>
         </div>
         <div class="tools">
-          <span class="filters">Filters(+)</span>
+          <a class="filters" href="#">Filters(+)</a>
           <div class="sorts">
-            <button class="sorts__toggle" id="sortsToggle">Sorts(-)</button>
-            <div class="sorts__options" id="sortsOptions">
-              <button data-sort="asc">Less to more</button>
-              <button data-sort="desc">More to Less</button>
-            </div>
+            <a href="#">Sorts(-)</a>
+            <a class="sorts__opt" href="#">Less to more</a>
+            <a class="sorts__opt" href="#">More to Less</a>
           </div>
         </div>
       </div>
 
-      <div class="grid" id="grid">
-        <article class="product" data-cat="men" data-price="199">
+      <div class="grid">
+        <article class="product">
           <div class="product__img"><img src="assets/camisa verde.png" alt="Basic Heavy Weight T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
           <small>Cotton T-Shirt</small>
           <div class="row"><span>Basic Heavy Weight T-Shirt</span><b>$ 199</b></div>
         </article>
-        <article class="product" data-cat="men" data-price="199">
+        <article class="product">
           <div class="product__img"><img src="assets/pantalon.jpg.png" alt="Soft Wash Straight Fit Jeans"><button class="plus" aria-label="Agregar">+</button></div>
           <small>Cotton Jeans</small>
           <div class="row"><span>Soft Wash Straight Fit Jeans</span><b>$ 199</b></div>
         </article>
-        <article class="product" data-cat="men" data-price="199">
+        <article class="product">
           <div class="product__img"><img src="assets/Rectangle 15.png" alt="Basic Heavy Weight T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
           <small>Cotton T-Shirt</small>
           <div class="row"><span>Basic Heavy Weight T-Shirt</span><b>$ 199</b></div>
         </article>
-
-        <!-- Se muestran al pulsar "More" -->
-        <article class="product is-extra" data-cat="women" data-price="149">
-          <div class="product__img"><img src="assets/Rectangle 16.png" alt="Relaxed Linen Shirt"><button class="plus" aria-label="Agregar">+</button></div>
-          <small>Linen Shirt</small>
-          <div class="row"><span>Relaxed Linen Shirt</span><b>$ 149</b></div>
-        </article>
-        <article class="product is-extra" data-cat="kid" data-price="89">
-          <div class="product__img"><img src="assets/sacoMarron.png" alt="Kids Zip Hoodie"><button class="plus" aria-label="Agregar">+</button></div>
-          <small>Cotton Hoodie</small>
-          <div class="row"><span>Kids Zip Hoodie</span><b>$ 89</b></div>
-        </article>
-        <article class="product is-extra" data-cat="women" data-price="129">
-          <div class="product__img"><img src="assets/mangaLarga.png" alt="Wide Leg Pants"><button class="plus" aria-label="Agregar">+</button></div>
-          <small>Cotton Pants</small>
-          <div class="row"><span>Wide Leg Pants</span><b>$ 129</b></div>
-        </article>
       </div>
 
-      <button class="more" id="more">
-        <span id="moreLabel">More</span>
+      <a class="more" href="#">
+        <span>More</span>
         <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l5 5 5-5"/></svg>
-      </button>
+      </a>
+    </section>
+
+    <!-- ========== OUR APPROACH ========== -->
+    <section class="approach">
+      <h2>Our approach to fashion design</h2>
+      <p>at elegant vogue , we blend creativity with craftsmanship to create fashion that transcends trends and stands the test of time each design is meticulously crafted, ensuring the highest quality exquisite finish</p>
+
+      <div class="approach__track">
+        <figure class="approach__item"><img src="assets/Rectangle 16.png" alt="Hombre con saco gris frente a un edificio"></figure>
+        <figure class="approach__item"><img src="assets/sacoMarron.png" alt="Hombre con saco café"></figure>
+        <figure class="approach__item"><img src="assets/pantalon.jpg.png" alt="Pantalón blanco sentado"></figure>
+        <figure class="approach__item"><img src="assets/mangaLarga.png" alt="Sudadera blanca"></figure>
+      </div>
+    </section>
+    <!-- ========== PRODUCTS ========== -->
+    <section class="shop" id="products">
+
+      <!-- Filtros (columna izquierda) -->
+      <aside class="filters-box" aria-label="Filtros">
+        <h2>Filters</h2>
+
+        <h3>Size</h3>
+        <div class="sizes">
+          <label class="size"><input class="sr" type="radio" name="size"><span>XS</span></label>
+          <label class="size"><input class="sr" type="radio" name="size" checked><span>S</span></label>
+          <label class="size"><input class="sr" type="radio" name="size"><span>M</span></label>
+          <label class="size"><input class="sr" type="radio" name="size"><span>L</span></label>
+          <label class="size"><input class="sr" type="radio" name="size"><span>XL</span></label>
+          <label class="size"><input class="sr" type="radio" name="size"><span>2X</span></label>
+        </div>
+
+        <div class="fgroup">
+          <details open>
+            <summary>Availability</summary>
+            <div class="fopts">
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>Availability <b>(450)</b></span></label>
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>Out Of Stack <b>(18)</b></span></label>
+            </div>
+          </details>
+
+          <details>
+            <summary>Category</summary>
+            <div class="fopts">
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>Shirts</span></label>
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>T-Shirts</span></label>
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>Jeans</span></label>
+            </div>
+          </details>
+
+          <details>
+            <summary>Colors</summary>
+            <div class="fopts">
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>Black</span></label>
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>White</span></label>
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>Beige</span></label>
+            </div>
+          </details>
+
+          <details>
+            <summary>Price Range</summary>
+            <div class="fopts">
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>$0 - $100</span></label>
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>$100 - $200</span></label>
+            </div>
+          </details>
+
+          <details>
+            <summary>Collections</summary>
+            <div class="fopts">
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>Summer 2024</span></label>
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>XIV 23-24</span></label>
+            </div>
+          </details>
+
+          <details>
+            <summary>Tags</summary>
+            <div class="fopts">
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>New</span></label>
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>Best Sellers</span></label>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ratings</summary>
+            <div class="fopts">
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>4 stars and up</span></label>
+              <label class="fopt"><input class="sr" type="checkbox"><i></i><span>3 stars and up</span></label>
+            </div>
+          </details>
+        </div>
+      </aside>
+
+      <!-- Contenido principal -->
+      <div class="shop__main">
+        <div class="shop__head">
+          <p class="crumbs"><a href="#">Home</a> / <span>Products</span></p>
+          <h2 class="shop__title">Products</h2>
+        </div>
+
+        <div class="shop__bar">
+          <form class="search" role="search" action="#">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+            <input type="search" placeholder="Search" aria-label="Buscar">
+          </form>
+
+          <div class="chips">
+            <label class="chip"><input class="sr" type="radio" name="cat" checked><span>New</span></label>
+            <label class="chip"><input class="sr" type="radio" name="cat"><span>Shirts</span></label>
+            <label class="chip"><input class="sr" type="radio" name="cat"><span>Polo Shirts</span></label>
+            <label class="chip"><input class="sr" type="radio" name="cat"><span>Shorts</span></label>
+            <label class="chip"><input class="sr" type="radio" name="cat"><span>Suits</span></label>
+            <label class="chip"><input class="sr" type="radio" name="cat"><span>Best Sellers</span></label>
+            <label class="chip"><input class="sr" type="radio" name="cat"><span>T-Shirts</span></label>
+            <label class="chip"><input class="sr" type="radio" name="cat"><span>Jeans</span></label>
+            <label class="chip"><input class="sr" type="radio" name="cat"><span>Jackets</span></label>
+            <label class="chip"><input class="sr" type="radio" name="cat"><span>Coats</span></label>
+          </div>
+        </div>
+
+        <div class="grid">
+          <article class="product">
+            <div class="product__img"><img src="assets/producto-1.png" alt="Basic Slim Fit T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+            <small>Cotton T Shirt <i class="swatch swatch--sand"></i>+5</small>
+            <div class="row"><span>Basic Slim Fit T-Shirt</span><b>$ 199</b></div>
+          </article>
+          <article class="product">
+            <div class="product__img"><img src="assets/producto-2.png" alt="Basic Heavy Weight T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+            <small>Crewneck T-Shirt <i class="swatch swatch--dark"></i>+6</small>
+            <div class="row"><span>Basic Heavy Weight T-Shirt</span><b>$ 199</b></div>
+          </article>
+          <article class="product">
+            <div class="product__img"><img src="assets/producto-3.png" alt="Full Sleeve Zipper"><button class="plus" aria-label="Agregar">+</button></div>
+            <small>Cotton T Shirt</small>
+            <div class="row"><span>Full Sleeve Zipper</span><b>$ 199</b></div>
+          </article>
+          <article class="product">
+            <div class="product__img"><img src="assets/producto-4.png" alt="Camo Print T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+            <small>Cotton T Shirt</small>
+            <div class="row"><span>Camo Print T-Shirt</span><b>$ 199</b></div>
+          </article>
+          <article class="product">
+            <div class="product__img"><img src="assets/producto-5.png" alt="Embroidered Black T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+            <small>Crewneck T-Shirt</small>
+            <div class="row"><span>Embroidered Black T-Shirt</span><b>$ 199</b></div>
+          </article>
+          <article class="product">
+            <div class="product__img"><img src="assets/producto-6.png" alt="Light Blue T-Shirt"><button class="plus" aria-label="Agregar">+</button></div>
+            <small>Cotton T Shirt</small>
+            <div class="row"><span>Light Blue T-Shirt</span><b>$ 199</b></div>
+          </article>
+        </div>
+      </div>
+
     </section>
   </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__info">
+        <h3 class="footer__label">Info</h3>
+        <ul class="footer__list">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+
+        <h3 class="footer__label footer__label--gap">Languages</h3>
+        <ul class="footer__list">
+          <li><a href="#">ENG</a></li>
+          <li><a href="#">ESP</a></li>
+          <li><a href="#">SVE</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__tech">
+        <h3 class="footer__label">Technologies</h3>
+        <div class="qr">
+          <div class="qr__logo" aria-label="XIV QR">
+            <span class="qr__ghost" aria-hidden="true">VR</span>
+            <svg class="qr__tri" viewBox="0 0 34 44" aria-hidden="true">
+              <path d="M0 22l14-14v28z" fill="#d9d9d9"/>
+              <path d="M12 6l20 16-20 16z" fill="#000"/>
+            </svg>
+            <span class="qr__word">XIV</span>
+            <span class="qr__word">QR</span>
+          </div>
+          <p class="qr__text">Near-field communication</p>
+          <span class="qr__slash" aria-hidden="true"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="to-top" href="#" aria-label="Volver arriba">
+      <svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M7 15V2M2 7l5-5 5 5"/></svg>
+    </a>
+  </footer>
+
 </body>
 </html>
