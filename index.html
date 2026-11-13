@@ -10,21 +10,22 @@
   <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
-  <div class="page">
+  <div class="page" id="top">
 
+    <!-- ========== HEADER ========== -->
     <header class="top">
       <div class="top__left">
         <button class="menu" aria-label="Menú">
           <svg width="26" height="18" viewBox="0 0 26 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 2h24M1 9h16M1 16h9"/></svg>
         </button>
         <nav class="links" aria-label="Principal">
-          <a href="#">Home</a>
-          <a href="#">Collections</a>
-          <a href="#">New</a>
+          <a href="#top">Home</a>
+          <a href="#products">Collections</a>
+          <a href="#detail">New</a>
         </nav>
       </div>
 
-      <a class="logo" href="#" aria-label="Inicio">
+      <a class="logo" href="#top" aria-label="Inicio">
         <svg width="34" height="44" viewBox="0 0 34 44"><path d="M4 2l28 20L4 42z" fill="#000"/></svg>
       </a>
 
@@ -44,6 +45,7 @@
       </div>
     </header>
 
+    <!-- ========== HERO ========== -->
     <main class="hero">
       <section class="panel">
         <ul class="cats">
@@ -194,10 +196,10 @@
         <figure class="approach__item"><img src="assets/mangaLarga.png" alt="Sudadera blanca"></figure>
       </div>
     </section>
+
     <!-- ========== PRODUCTS ========== -->
     <section class="shop" id="products">
 
-      <!-- Filtros (columna izquierda) -->
       <aside class="filters-box" aria-label="Filtros">
         <h2>Filters</h2>
 
@@ -272,10 +274,9 @@
         </div>
       </aside>
 
-      <!-- Contenido principal -->
       <div class="shop__main">
         <div class="shop__head">
-          <p class="crumbs"><a href="#">Home</a> / <span>Products</span></p>
+          <p class="crumbs"><a href="#top">Home</a> / <span>Products</span></p>
           <h2 class="shop__title">Products</h2>
         </div>
 
@@ -334,6 +335,72 @@
       </div>
 
     </section>
+
+    <!-- ========== PRODUCT DETAIL ========== -->
+    <section class="detail" id="detail">
+      <article class="pdp">
+
+        <div class="pdp__gal">
+          <input class="sr" type="radio" name="view" id="v1" checked>
+          <input class="sr" type="radio" name="view" id="v2">
+          <input class="sr" type="radio" name="view" id="v3">
+          <input class="sr" type="radio" name="view" id="v4">
+          <input class="sr" type="radio" name="view" id="v5">
+
+          <div class="pdp__main">
+            <img class="m1" src="assets/detalle-1.png" alt="Camiseta negra bordada, vista frontal">
+            <img class="m2" src="assets/detalle-2.png" alt="Camiseta negra bordada, vista 2">
+            <img class="m3" src="assets/detalle-3.png" alt="Camiseta negra bordada, vista lateral">
+            <img class="m4" src="assets/detalle-4.png" alt="Camiseta negra bordada, vista 4">
+            <img class="m5" src="assets/detalle-5.png" alt="Camiseta negra bordada, vista 5">
+          </div>
+
+          <div class="pdp__thumbs">
+            <label class="thumb" for="v1"><img src="assets/detalle-1.png" alt="Miniatura 1"></label>
+            <label class="thumb" for="v2"><img src="assets/detalle-2.png" alt="Miniatura 2"></label>
+            <label class="thumb" for="v3"><img src="assets/detalle-3.png" alt="Miniatura 3"></label>
+            <label class="thumb" for="v4"><img src="assets/detalle-4.png" alt="Miniatura 4"></label>
+            <label class="thumb" for="v5"><img src="assets/detalle-5.png" alt="Miniatura 5"></label>
+          </div>
+        </div>
+
+        <div class="pdp__info">
+          <button class="pdp__fav" aria-label="Favoritos">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z"/></svg>
+          </button>
+
+          <h2 class="pdp__name">Abstract Print Shirt</h2>
+          <p class="pdp__price">$99</p>
+          <p class="pdp__mrp">MRP incl. of all taxes</p>
+          <p class="pdp__desc">Relaxed-fit shirt. Camp collar and short sleeves. Button-up front.</p>
+
+          <h3 class="pdp__label">Color</h3>
+          <div class="swatches">
+            <label class="sw" aria-label="Gris claro"><input class="sr" type="radio" name="color"><span class="sw--1"></span></label>
+            <label class="sw" aria-label="Gris"><input class="sr" type="radio" name="color"><span class="sw--2"></span></label>
+            <label class="sw" aria-label="Negro"><input class="sr" type="radio" name="color" checked><span class="sw--3"></span></label>
+            <label class="sw" aria-label="Menta"><input class="sr" type="radio" name="color"><span class="sw--4"></span></label>
+            <label class="sw" aria-label="Blanco"><input class="sr" type="radio" name="color"><span class="sw--5"></span></label>
+            <label class="sw" aria-label="Lila"><input class="sr" type="radio" name="color"><span class="sw--6"></span></label>
+          </div>
+
+          <h3 class="pdp__label">Size</h3>
+          <div class="pdp__sizes">
+            <label class="psz"><input class="sr" type="radio" name="psize"><span>XS</span></label>
+            <label class="psz"><input class="sr" type="radio" name="psize"><span>S</span></label>
+            <label class="psz"><input class="sr" type="radio" name="psize"><span>M</span></label>
+            <label class="psz"><input class="sr" type="radio" name="psize"><span>L</span></label>
+            <label class="psz"><input class="sr" type="radio" name="psize"><span>XL</span></label>
+            <label class="psz"><input class="sr" type="radio" name="psize"><span>2X</span></label>
+          </div>
+
+          <p class="pdp__guide"><a href="#">Find your size</a> | <a href="#">Measurement guide</a></p>
+          <button class="pdp__add">Add</button>
+        </div>
+
+      </article>
+    </section>
+
   </div>
 
   <!-- ========== FOOTER ========== -->
@@ -375,7 +442,7 @@
 
     </div>
 
-    <a class="to-top" href="#" aria-label="Volver arriba">
+    <a class="to-top" href="#top" aria-label="Volver arriba">
       <svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M7 15V2M2 7l5-5 5 5"/></svg>
     </a>
   </footer>
